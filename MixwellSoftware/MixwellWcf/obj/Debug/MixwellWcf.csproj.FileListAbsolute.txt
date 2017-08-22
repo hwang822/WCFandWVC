@@ -1,0 +1,7 @@
+D:\Workarea\MixwellSoftware\MixwellWcf\bin\MixwellWcf.dll
+D:\Workarea\MixwellSoftware\MixwellWcf\bin\MixwellWcf.pdb
+D:\Workarea\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.dll
+D:\Workarea\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.pdb
+D:\Workarea\MixwellSoftware\MixwellWcf\bin\EntityFramework.dll
+D:\Workarea\MixwellSoftware\MixwellWcf\bin\EntityFramework.xml
+D:\Workarea\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.csprojResolveAssemblyReference.cache

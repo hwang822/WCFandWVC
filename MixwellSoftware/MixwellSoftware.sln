@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWeb", "MixwellWeb\MixwellWeb.csproj", "{DFADFB35-0BAD-4486-AB30-2348A0126CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWcf", "MixwellWcf\MixwellWcf.csproj", "{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellMvc", "MixwellMvc\MixwellMvc.csproj", "{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFADFB35-0BAD-4486-AB30-2348A0126CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFADFB35-0BAD-4486-AB30-2348A0126CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFADFB35-0BAD-4486-AB30-2348A0126CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFADFB35-0BAD-4486-AB30-2348A0126CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
