@@ -81,6 +81,6 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OAuth.Consum
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OAuth.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OpenId.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csprojResolveAssemblyReference.cache
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csprojResolveAssemblyReference.cache

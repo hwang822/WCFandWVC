@@ -25,6 +25,5 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\DotNetOpenAuth.OAuth.Co
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\DotNetOpenAuth.OpenId.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\DotNetOpenAuth.AspNet.xml
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\MixwellAngular.csprojResolveAssemblyReference.cache
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\MixwellAngular.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\MixwellAngular.pdb

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellMvc", "MixwellMvc\Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellAngular", "MixwellAngular\MixwellAngular.csproj", "{247D7F80-EDB0-4DBB-96FC-17EE5799127A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWPF", "WixwellWPF\MixwellWPF.csproj", "{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

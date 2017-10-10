@@ -1,0 +1,14 @@
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\Views\MainWindow.baml
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\App.baml
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\Views\MainWindow.g.cs
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\App.g.cs
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF_MarkupCompile.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.g.resources
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.Properties.Resources.resources
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\MixwellWPF.csproj.GenerateResource.Cache
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.exe
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.exe.config
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.exe
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\MixwellWPF.csprojResolveAssemblyReference.cache
