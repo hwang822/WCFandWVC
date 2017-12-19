@@ -12,3 +12,6 @@ C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.exe
 C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.pdb
 C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.pdb
 C:\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\MixwellWPF.csprojResolveAssemblyReference.cache
+C:\hwang\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\bin\Debug\WixwellWPF.exe.config
+C:\hwang\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.exe
+C:\hwang\Workarea\WCFandWVC\MixwellSoftware\WixwellWPF\obj\Debug\WixwellWPF.pdb
