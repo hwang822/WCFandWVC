@@ -16,14 +16,18 @@ namespace MixwellWcf
         [OperationContract]
         //[WebGet] //using AllData Method
         //[WebGet(UriTemplate = "AllData")]   // default xml format
+        //http://localhost:23506/MixwellWCFService.svc/alldata => ["carrot","fox","explorer"]
         [WebGet(UriTemplate = "AllData", ResponseFormat=WebMessageFormat.Json)] // for json format
-        List<MixwellData> GetAllData();
+        //List<MixwellData> GetAllData();
+        List<string> GetAllData();
 
         [OperationContract]
         //[WebGet] //using GetData Method
         //[WebGet(UriTemplate = "Data/{id}")]  // default xml format
+        //http://localhost:23506/MixwellWCFService.svc/data/40 => "Data = 40"
         [WebGet(UriTemplate = "Data/{id}", ResponseFormat = WebMessageFormat.Json)] // for json format        
-        MixwellData GetData(string id);
+        //MixwellData GetData(string id);
+        string GetData(string id);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Data/Add", Method = "POST", ResponseFormat = WebMessageFormat.Json)]

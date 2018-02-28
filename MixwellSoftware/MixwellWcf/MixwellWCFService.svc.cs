@@ -13,6 +13,26 @@ namespace MixwellWcf
     public class MixwellWCFService : IMixwellWCFService
     {
 
+        public List<string> GetAllData()
+        {
+            //throw new NotImplementedException();
+            return new List<string>()
+            {
+            "carrot",
+            "fox",
+            "explorer"
+            };
+            
+        }
+
+        public string GetData(string id)
+        {
+            return String.Format("Data = {0}", id);
+
+            //        throw new NotImplementedException();
+        }
+
+/*  //data base connection has problem at iis run
         public List<MixwellData> GetAllData()
         {
             using (var db = new MixwellDatabaseEntities())
@@ -33,7 +53,7 @@ namespace MixwellWcf
             }
             //        throw new NotImplementedException();
         }
-
+*/
         int IMixwellWCFService.AddData(MixwellData data)
         {
             using (var db = new MixwellDatabaseEntities())
