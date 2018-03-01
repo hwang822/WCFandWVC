@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Hero }         from '../employee';
+import { Employee }         from '../employee';
 import { EmployeeService }  from '../employee.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { EmployeeService }  from '../employee.service';
   styleUrls: [ './employee-detail.component.css' ]
 })
 export class EmployeeDetailComponent implements OnInit {
-  @Input() hero: Hero;
+  @Input() hero: Employee;
 
   constructor(
     private route: ActivatedRoute,

@@ -8,7 +8,7 @@ import {
    debounceTime, distinctUntilChanged, switchMap
  } from 'rxjs/operators';
 
-import { Hero } from '../employee';
+import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
 
 @Component({
@@ -17,7 +17,7 @@ import { EmployeeService } from '../employee.service';
   styleUrls: [ './employee-search.component.css' ]
 })
 export class EmployeeSearchComponent implements OnInit {
-  heroes$: Observable<Hero[]>;
+  heroes$: Observable<Employee[]>;
   private searchTerms = new Subject<string>();
 
   constructor(private heroService: EmployeeService) {}

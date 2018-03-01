@@ -13,7 +13,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class EmployeeService {
+export class ServiceService {
 
   private heroesUrl = 'api/heroes';  // URL to web api
 

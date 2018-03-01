@@ -17,6 +17,7 @@ import { EmployeeService }          from './employee.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { ServicesComponent } from './services/services.component';
+import { ServiceDetailComponent }  from './service-detail/service-detail.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { ServicesComponent } from './services/services.component';
     EmployeeDetailComponent,
     MessagesComponent,
     EmployeeSearchComponent,
-    ServicesComponent
+    ServicesComponent,
+	ServiceDetailComponent
   ],
   providers: [ EmployeeService, MessageService ],
   bootstrap: [ AppComponent ]

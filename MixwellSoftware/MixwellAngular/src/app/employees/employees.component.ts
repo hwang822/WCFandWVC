@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from '../employee';
+import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
-  heroes: Hero[];
+  heroes: Employee[];
 
   constructor(private heroService: EmployeeService) { }
 
@@ -25,13 +25,13 @@ export class EmployeesComponent implements OnInit {
   add(name: string): void {
     name = name.trim();
     if (!name) { return; }
-    this.heroService.addHero({ name } as Hero)
+    this.heroService.addHero({ name } as Employee)
       .subscribe(hero => {
         this.heroes.push(hero);
       });
   }
 
-  delete(hero: Hero): void {
+  delete(hero: Employee): void {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero).subscribe();
   }
