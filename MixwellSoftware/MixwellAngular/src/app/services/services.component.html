@@ -1,21 +1,12 @@
 <h2>Services</h2>
-
-<div>
-  <label>Service name:
-    <input #serviceName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <!--button (click)="add(serviceName.value); serviceName.value=''">
-    add
-  </!--button-->
-</div>
-
 <ul class="services">
-  <li *ngFor="let service of services">
-    <a routerLink="/detail/{{service.id}}">
-      <span class="badge">{{service.id}}</span> {{service.name}}
-    </a>
-    <button class="delete" title="delete service"
-    (click)="delete(service)">x</button>
+  <li *ngFor="let service of services" 
+    [class.selected]="service === 
+	selectedService"  
+    (click)="onSelect(service)">
+    <span class="badge">{{service.id}}
+	</span> {{service.name}}
   </li>
 </ul>
+<app-service-detail [service]="selectedService"></app-service-detail>
+

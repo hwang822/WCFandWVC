@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Service } from '../service';
-import { Employee } from '../employee';
 import { SERVICES } from '../mock-services';
-import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-services',
@@ -12,10 +10,13 @@ import { ServiceService } from '../service.service';
 
 export class ServicesComponent implements OnInit {
   services = SERVICES;
-
+  selectedService: Service;
   constructor() { }
 
   ngOnInit() {
   }
   
+  onSelect(service: Service): void {
+    this.selectedService = service;
+  }  
 }
