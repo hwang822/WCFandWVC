@@ -9,31 +9,32 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
-  heroes: Employee[];
+//  heroes: Employee[];
+  employees: Employee[] = [];
 
-  constructor(private heroService: EmployeeService) { }
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getEmployees();
   }
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-    .subscribe(heroes => this.heroes = heroes);
+  getEmployees(): void {
+    this.employeeService.getEmployees()
+    .subscribe(employees => this.employees = employees);
   }
 
   add(name: string): void {
     name = name.trim();
-    if (!name) { return; }
-    this.heroService.addHero({ name } as Employee)
-      .subscribe(hero => {
-        this.heroes.push(hero);
-      });
+//    if (!name) { return; }
+//    this.employeeService.addHero({ name } as Employee)
+//      .subscribe(hero => {
+//        this.employeeService.push(hero);
+//      });
   }
 
   delete(hero: Employee): void {
-    this.heroes = this.heroes.filter(h => h !== hero);
-    this.heroService.deleteHero(hero).subscribe();
+//    this.employeeService = this.employeeService.filter(h => h !== hero);
+//    this.employeeService.deleteHero(hero).subscribe();
   }
 
 }

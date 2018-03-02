@@ -8,16 +8,16 @@ import { EmployeeService } from '../employee.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  heroes: Employee[] = [];
+  employees: Employee[] = [];
 
-  constructor(private heroService: EmployeeService) { }
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getEmployees();
   }
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes.slice(1, 5));
+  getEmployees(): void {
+    this.employeeService.getEmployees()
+      .subscribe(employees => this.employees = employees.slice(1, 5));
   }
 }

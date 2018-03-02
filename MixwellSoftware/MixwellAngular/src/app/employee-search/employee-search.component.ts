@@ -17,10 +17,10 @@ import { EmployeeService } from '../employee.service';
   styleUrls: [ './employee-search.component.css' ]
 })
 export class EmployeeSearchComponent implements OnInit {
-  heroes$: Observable<Employee[]>;
+  employees$: Observable<Employee[]>;
   private searchTerms = new Subject<string>();
 
-  constructor(private heroService: EmployeeService) {}
+  constructor(private employeeService: EmployeeService) {}
 
   // Push a search term into the observable stream.
   search(term: string): void {
@@ -28,7 +28,7 @@ export class EmployeeSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.heroes$ = this.searchTerms.pipe(
+    this.employees$ = this.searchTerms.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
 
@@ -36,7 +36,7 @@ export class EmployeeSearchComponent implements OnInit {
       distinctUntilChanged(),
 
       // switch to new search observable each time the term changes
-      switchMap((term: string) => this.heroService.searchHeroes(term)),
+      switchMap((term: string) => this.employeeService.searchEmployees(term)),
     );
   }
 }

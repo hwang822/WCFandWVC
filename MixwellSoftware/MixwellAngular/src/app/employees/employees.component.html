@@ -2,20 +2,20 @@
 
 <div>
   <label>Employee name:
-    <input #heroName />
+    <input #employeeName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
+  <button (click)="add(employeeName.value); employeeName.value=''">
     add
   </button>
 </div>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
+<ul class="employees">
+  <li *ngFor="let employee of employees">
+    <a routerLink="/detail/{{employee.id}}">
+      <span class="badge">{{employee.id}}</span> {{employee.name}}
     </a>
-    <button class="delete" title="delete hero"
-    (click)="delete(hero)">x</button>
+    <button class="delete" title="delete employee"
+    (click)="delete(employee)">x</button>
   </li>
 </ul>

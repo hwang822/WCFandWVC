@@ -20,12 +20,12 @@ export class EmployeeDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getHero();
+    this.getEmployee();
   }
 
-  getHero(): void {
+  getEmployee(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.heroService.getHero(id)
+    this.heroService.getEmployee(id)
       .subscribe(hero => this.hero = hero);
   }
 
