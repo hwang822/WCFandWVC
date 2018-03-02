@@ -11,11 +11,11 @@ import { EmployeeService }  from '../employee.service';
   styleUrls: [ './employee-detail.component.css' ]
 })
 export class EmployeeDetailComponent implements OnInit {
-  @Input() hero: Employee;
+  @Input() employee: Employee;
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: EmployeeService,
+    private employeeService: EmployeeService,
     private location: Location
   ) {}
 
@@ -25,16 +25,16 @@ export class EmployeeDetailComponent implements OnInit {
 
   getEmployee(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.heroService.getEmployee(id)
-      .subscribe(hero => this.hero = hero);
+    this.employeeService.getEmployee(id)
+      .subscribe( employee => this.employee = employee);
   }
-
+    
   goBack(): void {
     this.location.back();
   }
 
  save(): void {
-    this.heroService.updateHero(this.hero)
+    this.employeeService.updateEmployee(this.employee)
       .subscribe(() => this.goBack());
   }
 }

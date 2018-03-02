@@ -12,7 +12,7 @@
 
 <ul class="services">
   <li *ngFor="let service of services">
-    <a routerLink="/sdetail/{{service.id}}">
+    <a routerLink="/detail/{{service.id}}">
       <span class="badge">{{service.id}}</span> {{service.name}}
     </a>
     <button class="delete" title="delete service"

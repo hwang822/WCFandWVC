@@ -10,10 +10,9 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeesComponent implements OnInit {
 //  heroes: Employee[];
-  employees: Employee[] = [];
+  employees: Employee[];
 
   constructor(private employeeService: EmployeeService) { }
-
   ngOnInit() {
     this.getEmployees();
   }
@@ -25,16 +24,17 @@ export class EmployeesComponent implements OnInit {
 
   add(name: string): void {
     name = name.trim();
-//    if (!name) { return; }
-//    this.employeeService.addHero({ name } as Employee)
-//      .subscribe(hero => {
-//        this.employeeService.push(hero);
-//      });
+    if (!name) { return; }
+    this.employeeService.addEmployee({ name } as Employee)
+      .subscribe(employee => {
+        this.employees.push(employee);
+      });
   }
 
-  delete(hero: Employee): void {
-//    this.employeeService = this.employeeService.filter(h => h !== hero);
-//    this.employeeService.deleteHero(hero).subscribe();
+  delete(employee: Employee): void {
+    this.employees = this.employees.filter(h => h !== employee);
+    this.employeeService.deleteEmployee(employee).subscribe();
   }
 
+  
 }

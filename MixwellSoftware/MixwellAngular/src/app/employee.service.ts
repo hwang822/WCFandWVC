@@ -26,7 +26,7 @@ export class EmployeeService {
   getEmployees (): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.employeeUrl)
       .pipe(
-        tap(heroes => this.log(`fetched employees`)),
+        tap(employees => this.log(`fetched employees`)),
         catchError(this.handleError('getEmployees', []))
       );
   }
@@ -36,7 +36,7 @@ export class EmployeeService {
     const url = `${this.employeeUrl}/?id=${id}`;
     return this.http.get<Employee[]>(url)
       .pipe(
-        map(heroes => heroes[0]), // returns a {0|1} element array
+        map(employees => employees[0]), // returns a {0|1} element array
         tap(h => {
           const outcome = h ? `fetched` : `did not find`;
           this.log(`${outcome} employee id=${id}`);
@@ -69,29 +69,29 @@ export class EmployeeService {
   //////// Save methods //////////
 
   /** POST: add a new employee to the server */
-  addHero (employee: Employee): Observable<Employee> {
+  addEmployee (employee: Employee): Observable<Employee> {
     return this.http.post<Employee>(this.employeeUrl, employee, httpOptions).pipe(
       tap((employee: Employee) => this.log(`added employee w/ id=${employee.id}`)),
-      catchError(this.handleError<Employee>('addHero'))
+      catchError(this.handleError<Employee>('addEmployee'))
     );
   }
 
   /** DELETE: delete the employee from the server */
-  deleteHero (employee: Employee | number): Observable<Employee> {
+  deleteEmployee (employee: Employee | number): Observable<Employee> {
     const id = typeof employee === 'number' ? employee : employee.id;
     const url = `${this.employeeUrl}/${id}`;
 
     return this.http.delete<Employee>(url, httpOptions).pipe(
       tap(_ => this.log(`deleted employee id=${id}`)),
-      catchError(this.handleError<Employee>('deleteHero'))
+      catchError(this.handleError<Employee>('deleteEmployee'))
     );
   }
 
   /** PUT: update the employee on the server */
-  updateHero (employee: Employee): Observable<any> {
+  updateEmployee (employee: Employee): Observable<any> {
     return this.http.put(this.employeeUrl, employee, httpOptions).pipe(
       tap(_ => this.log(`updated employee id=${employee.id}`)),
-      catchError(this.handleError<any>('updateHero'))
+      catchError(this.handleError<any>('updateEmployee'))
     );
   }
 
