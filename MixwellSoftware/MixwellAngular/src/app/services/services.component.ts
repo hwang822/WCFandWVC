@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Service } from '../service';
 import { Employee } from '../employee';
-import { EmployeeService } from '../employee.service';
+import { DataService } from '../data.service';
 
 
 
@@ -16,7 +16,7 @@ export class ServicesComponent implements OnInit {
   services: Service[]; 
 
   selectedService: Service;
-  constructor(private serviceService: EmployeeService) {}
+  constructor(private serviceService: DataService) {}
 
   ngOnInit() {
     this.getServices();

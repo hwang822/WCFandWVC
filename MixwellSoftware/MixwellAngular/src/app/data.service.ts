@@ -14,7 +14,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class EmployeeService {
+export class DataService {
 
   private employeeUrl = 'api/heroes';  // URL to web api
 
@@ -120,8 +120,8 @@ export class EmployeeService {
     };
   }
 
-  /** Log a EmployeeService message with the MessageService */
+  /** Log a DataService message with the MessageService */
   private log(message: string) {
-    this.messageService.add('EmployeeService: ' + message);
+    this.messageService.add('DataService: ' + message);
   }
 }

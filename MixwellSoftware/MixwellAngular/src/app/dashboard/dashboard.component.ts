@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
-import { EmployeeService } from '../employee.service';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +10,7 @@ import { EmployeeService } from '../employee.service';
 export class DashboardComponent implements OnInit {
   employees: Employee[] = [];
 
-  constructor(private employeeService: EmployeeService) { }
+  constructor(private employeeService: DataService) { }
 
   ngOnInit() {
     this.getEmployees();

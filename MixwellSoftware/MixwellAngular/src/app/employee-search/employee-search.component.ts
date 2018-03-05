@@ -9,7 +9,7 @@ import {
  } from 'rxjs/operators';
 
 import { Employee } from '../employee';
-import { EmployeeService } from '../employee.service';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-employee-search',
@@ -20,7 +20,7 @@ export class EmployeeSearchComponent implements OnInit {
   employees$: Observable<Employee[]>;
   private searchTerms = new Subject<string>();
 
-  constructor(private employeeService: EmployeeService) {}
+  constructor(private employeeService: DataService) {}
 
   // Push a search term into the observable stream.
   search(term: string): void {

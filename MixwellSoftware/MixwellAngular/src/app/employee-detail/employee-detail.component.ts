@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Employee }         from '../employee';
-import { EmployeeService }  from '../employee.service';
+import { DataService }  from '../data.service';
 
 @Component({
   selector: 'app-employee-detail',
@@ -15,7 +15,7 @@ export class EmployeeDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private employeeService: EmployeeService,
+    private employeeService: DataService,
     private location: Location
   ) {}
 
