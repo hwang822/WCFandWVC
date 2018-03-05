@@ -1,3 +1,20 @@
+/*  
+import { Injectable } from '@angular/core';
+import { Service } from './service';
+import { SERVICES } from './mock-services';
+
+@Injectable()
+export class ServiceService {
+
+  constructor() { }
+  
+  getServices(): Service[] {
+     return SERVICES;
+  }  
+
+}
+*/
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -5,8 +22,12 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
 
+import { Employee } from './employee';
 import { Service } from './service';
 import { MessageService } from './message.service';
+
+import { EMPLOYEES } from './mock-employees';
+import { SERVICES } from './mock-services';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -15,82 +36,93 @@ const httpOptions = {
 @Injectable()
 export class ServiceService {
 
-  private serviceUrl = 'api/heroes';  // URL to web api
+  private employeeUrl = 'api/heroes';  // URL to web api
 
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
 
-  /** GET services from the server */
-  getServices (): Observable<Service[]> {
-    return this.http.get<Service[]>(this.serviceUrl)
+  getServices (): Employee[] {
+	  return EMPLOYEES;
+/*	  
+    return this.http.get<Employee[]>(this.employeeUrl)
       .pipe(
-        tap(services => this.log(`fetched services`)),
-        catchError(this.handleError('getServices', []))
+        tap(employees => this.log(`fetched employees`)),
+        catchError(this.handleError('getEmployees', []))
+      );
+*/	  
+  }
+  
+  /** GET employees from the server */
+  getEmployees (): Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.employeeUrl)
+      .pipe(
+        tap(employees => this.log(`fetched employees`)),
+        catchError(this.handleError('getEmployees', []))
       );
   }
 
-  /** GET service by id. Return `undefined` when id not found */
-  getServiceNo404<Data>(id: number): Observable<Service> {
-    const url = `${this.serviceUrl}/?id=${id}`;
-    return this.http.get<Service[]>(url)
+  /** GET employee by id. Return `undefined` when id not found */
+  getEmployeeNo404<Data>(id: number): Observable<Employee> {
+    const url = `${this.employeeUrl}/?id=${id}`;
+    return this.http.get<Employee[]>(url)
       .pipe(
-        map(services => services[0]), // returns a {0|1} element array
+        map(employees => employees[0]), // returns a {0|1} element array
         tap(h => {
           const outcome = h ? `fetched` : `did not find`;
-          this.log(`${outcome} service id=${id}`);
+          this.log(`${outcome} employee id=${id}`);
         }),
-        catchError(this.handleError<Service>(`getService id=${id}`))
+        catchError(this.handleError<Employee>(`getEmployee id=${id}`))
       );
   }
 
-  /** GET service by id. Will 404 if id not found */
-  getService(id: number): Observable<Service> {
-    const url = `${this.serviceUrl}/${id}`;
-    return this.http.get<Service>(url).pipe(
-      tap(_ => this.log(`fetched service id=${id}`)),
-      catchError(this.handleError<Service>(`getService id=${id}`))
+  /** GET employee by id. Will 404 if id not found */
+  getEmployee(id: number): Observable<Employee> {
+    const url = `${this.employeeUrl}/${id}`;
+    return this.http.get<Employee>(url).pipe(
+      tap(_ => this.log(`fetched employee id=${id}`)),
+      catchError(this.handleError<Employee>(`getEmployee id=${id}`))
     );
   }
 
-  /* GET services whose name contains search term */
-  searchServices(term: string): Observable<Service[]> {
+  /* GET employees whose name contains search term */
+  searchEmployees(term: string): Observable<Employee[]> {
     if (!term.trim()) {
-      // if not search term, return empty service array.
+      // if not search term, return empty employee array.
       return of([]);
     }
-    return this.http.get<Service[]>(`api/Service/?name=${term}`).pipe(
-      tap(_ => this.log(`found services matching "${term}"`)),
-      catchError(this.handleError<Service[]>('searchServices', []))
+    return this.http.get<Employee[]>(`api/employee/?name=${term}`).pipe(
+      tap(_ => this.log(`found employees matching "${term}"`)),
+      catchError(this.handleError<Employee[]>('searchEmployees', []))
     );
   }
 
   //////// Save methods //////////
 
-  /** POST: add a new service to the server */
-  addService (service: Service): Observable<Service> {
-    return this.http.post<Service>(this.serviceUrl, service, httpOptions).pipe(
-      tap((service: Service) => this.log(`added service w/ id=${service.id}`)),
-      catchError(this.handleError<Service>('addService'))
+  /** POST: add a new employee to the server */
+  addEmployee (employee: Employee): Observable<Employee> {
+    return this.http.post<Employee>(this.employeeUrl, employee, httpOptions).pipe(
+      tap((employee: Employee) => this.log(`added employee w/ id=${employee.id}`)),
+      catchError(this.handleError<Employee>('addEmployee'))
     );
   }
 
-  /** DELETE: delete the service from the server */
-  deleteService (service: Service | number): Observable<Service> {
-    const id = typeof service === 'number' ? service : service.id;
-    const url = `${this.serviceUrl}/${id}`;
+  /** DELETE: delete the employee from the server */
+  deleteEmployee (employee: Employee | number): Observable<Employee> {
+    const id = typeof employee === 'number' ? employee : employee.id;
+    const url = `${this.employeeUrl}/${id}`;
 
-    return this.http.delete<Service>(url, httpOptions).pipe(
-      tap(_ => this.log(`deleted service id=${id}`)),
-      catchError(this.handleError<Service>('deleteService'))
+    return this.http.delete<Employee>(url, httpOptions).pipe(
+      tap(_ => this.log(`deleted employee id=${id}`)),
+      catchError(this.handleError<Employee>('deleteEmployee'))
     );
   }
 
-  /** PUT: update the service on the server */
-  updateService (service: Service): Observable<any> {
-    return this.http.put(this.serviceUrl, service, httpOptions).pipe(
-      tap(_ => this.log(`updated service id=${service.id}`)),
-      catchError(this.handleError<any>('updateService'))
+  /** PUT: update the employee on the server */
+  updateEmployee (employee: Employee): Observable<any> {
+    return this.http.put(this.employeeUrl, employee, httpOptions).pipe(
+      tap(_ => this.log(`updated employee id=${employee.id}`)),
+      catchError(this.handleError<any>('updateEmployee'))
     );
   }
 
@@ -114,8 +146,11 @@ export class ServiceService {
     };
   }
 
-  /** Log a ServiceService message with the MessageService */
+  /** Log a EmployeeService message with the MessageService */
   private log(message: string) {
-    this.messageService.add('ServiceService: ' + message);
+    this.messageService.add('EmployeeService: ' + message);
   }
 }
+
+
+

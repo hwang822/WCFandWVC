@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
-
 import { Employee } from './employee';
-import { Service } from './service';
 import { MessageService } from './message.service';
+
+import { Service } from './service';
+import { SERVICES } from './mock-services';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -22,6 +22,11 @@ export class EmployeeService {
     private http: HttpClient,
     private messageService: MessageService) { }
 
+  /** GET employees from the server */
+  getServices (): Service[] {
+      return SERVICES;
+  }
+	
   /** GET employees from the server */
   getEmployees (): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.employeeUrl)

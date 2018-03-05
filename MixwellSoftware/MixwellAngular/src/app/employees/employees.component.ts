@@ -9,7 +9,6 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
-//  heroes: Employee[];
   employees: Employee[];
 
   constructor(private employeeService: EmployeeService) { }

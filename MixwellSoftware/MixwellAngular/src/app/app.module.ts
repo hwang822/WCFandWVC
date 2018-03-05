@@ -18,6 +18,7 @@ import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent }  from './service-detail/service-detail.component';
+import { ServiceService }          from './service.service';
 
 @NgModule({
   imports: [
