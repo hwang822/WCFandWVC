@@ -26,6 +26,22 @@ namespace MixwellWPF.Models
             }
         }
 
+        public void Clear()
+        {
+            if (_name != "")
+                _name = "";
+            else
+                _name = "David";
+            OnPropertyChanged("Name");
+        }
+
+        public void AddName()
+        {
+            _name = _name + " " + _name;
+            OnPropertyChanged("Name");
+        }
+
+
         #region INotifyPropertyChanged Members
         public event PropertyChangedEventHandler PropertyChanged;
 
