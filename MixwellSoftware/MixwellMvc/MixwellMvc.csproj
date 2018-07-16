@@ -158,23 +158,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Data\App_Start\AuthConfig.cs" />
+    <Compile Include="App_Data\App_Start\BundleConfig.cs" />
+    <Compile Include="App_Data\App_Start\FilterConfig.cs" />
+    <Compile Include="App_Data\App_Start\RouteConfig.cs" />
+    <Compile Include="App_Data\App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DependencyInjectionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MixwellDataController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Images\Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Models\AccountModels.cs" />
-    <Compile Include="Controllers\Models\MixwellData.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\MixwellData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\DependencyInjectionService.cs" />
+    <Compile Include="Models\DependencyInjectionService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -294,9 +294,7 @@
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
