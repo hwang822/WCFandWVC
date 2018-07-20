@@ -86,4 +86,3 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.OpenId.Relyi
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.AspNet.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojResolveAssemblyReference.cache

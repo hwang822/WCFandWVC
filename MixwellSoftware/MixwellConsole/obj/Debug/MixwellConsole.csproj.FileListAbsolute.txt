@@ -1,0 +1,6 @@
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\bin\Debug\MixwellConsole.exe.config
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\bin\Debug\MixwellConsole.exe
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\bin\Debug\MixwellConsole.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.exe
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.csprojResolveAssemblyReference.cache
