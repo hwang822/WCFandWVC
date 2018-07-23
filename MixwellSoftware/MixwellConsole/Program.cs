@@ -12,9 +12,12 @@ namespace MixwellConsole
     {
         static void Main(string[] args)
         {
+            MixwellSample sample = new MixwellSample();
+            sample.TestDelegates();
+            sample.TestBasicThreadSynchronization();
 
             MixwellCSharp test = new MixwellCSharp();
-
+            
             test.runAMultipleThreading();
             MixwellProperties.MinSalary = 500;
             Console.WriteLine("Mixwell Min Salary is: " + MixwellProperties.MinSalary);
