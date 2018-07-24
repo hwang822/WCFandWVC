@@ -1,6 +1,0 @@
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\bin\Debug\MixwellMultiThreading.exe.config
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\bin\Debug\MixwellMultiThreading.exe
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\bin\Debug\MixwellMultiThreading.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\obj\Debug\MixwellMultiThreading.csprojResolveAssemblyReference.cache
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\obj\Debug\MixwellMultiThreading.exe
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMultiThreading\obj\Debug\MixwellMultiThreading.pdb

@@ -228,6 +228,9 @@ namespace MixwellConsole
         //7. C# Basic Thread Synchronization  
         //https://www.youtube.com/watch?v=Q1sRKlzsXTE
 
+        //********************************
+        //Multiple threading Synchronization to share resource
+
         static int count = 0;
         static object baton = new object();
 
@@ -247,14 +250,135 @@ namespace MixwellConsole
             }
         }
         // aslo has dead lock issue to see MixwellMultiThreading
+        //********************************
+        class Account
+        {
+            int _balance;
+            int _id;
 
+            public Account(int id, int balance)
+            {
+                _id = id;
+                _balance = balance;
+            }
+
+            public int ID
+            {
+                get { return _id; }
+            }
+
+            public void Widthraw(int ammount)
+            {
+                _balance = _balance - ammount;
+            }
+            public void Deposite(int ammount)
+            {
+                _balance = _balance + ammount;
+            }
+
+            //public void Withdraw()
+        }
+
+        class AccountManager
+        {
+            Account _fromAccount;
+            Account _toAccount;
+            int _amountTransfer;
+
+            public AccountManager(Account fromAccount, Account toAccount, int amountTransfer)
+            {
+                _fromAccount = fromAccount;
+                _toAccount = toAccount;
+                _amountTransfer = amountTransfer;
+            }
+
+            //This one has deadlock because T1 has lock fromaccount and T2 has lock toAccount to withrow.               
+            //But T1 try to ask toAccount to lock to make deposte and toAccount is locked by T2.
+            //And T2 try to ask fromAccount to lock to make deposit and fromAccount is locked by T1
+
+            public void Transfer()
+            {
+                Console.WriteLine(Thread.CurrentThread.Name + " trying to acquire lock on " + _fromAccount.ID.ToString());
+                lock (_fromAccount)
+                {
+                    Console.WriteLine(Thread.CurrentThread.Name + " acquired lock on " + _fromAccount.ID.ToString());
+                    Console.WriteLine(Thread.CurrentThread.Name + " suspended for 1 sec");
+                    Thread.Sleep(1000);
+                    Console.WriteLine(Thread.CurrentThread.Name + " back in action and trying to acquire lock on " + _toAccount.ID.ToString());
+
+                    lock (_toAccount)
+                    {
+                        Console.WriteLine(Thread.CurrentThread.Name + " acquired lock on " + _toAccount.ID.ToString());
+                        _fromAccount.Widthraw(_amountTransfer);
+                        _toAccount.Deposite(_amountTransfer);
+                    }
+                }
+            }
+
+            public void NoLockTransfer()
+            {
+                object _lock1, _lock2;
+
+                if (_fromAccount.ID < _toAccount.ID)
+                {
+                    _lock1 = _fromAccount; _lock2 = _toAccount;
+                }
+                else
+                {
+                    _lock1 = _toAccount; _lock2 = _fromAccount;
+                }
+
+                Console.WriteLine(Thread.CurrentThread.Name + " trying to acquire lock on " + ((Account)_lock1).ID.ToString());
+                lock (_lock1)
+                {
+                    Console.WriteLine(Thread.CurrentThread.Name + " acquired lock on " + ((Account)_lock1).ID.ToString());
+                    Console.WriteLine(Thread.CurrentThread.Name + " suspended for 1 sec");
+                    Thread.Sleep(1000);
+                    Console.WriteLine(Thread.CurrentThread.Name + " back in action and trying to acquire lock on " + ((Account)_lock2).ID.ToString());
+
+                    lock (_lock2)
+                    {
+                        Console.WriteLine(Thread.CurrentThread.Name + " acquired lock on " + ((Account)_lock2).ID.ToString());
+                        _fromAccount.Widthraw(_amountTransfer);
+                        _toAccount.Deposite(_amountTransfer);
+                        Console.WriteLine(Thread.CurrentThread.Name + " acquired unlock on " + ((Account)_lock2).ID.ToString());
+                    }
+                    Console.WriteLine(Thread.CurrentThread.Name + " acquired unlock on " + ((Account)_lock1).ID.ToString());
+                }
+            }
+
+        }
+
+        //********************************
         public void TestBasicThreadSynchronization()
         {
+            //Multiple threading Synchronization to share resource
             var thread1 = new Thread(incrementCount);
             var thread2 = new Thread(incrementCount);
             thread1.Start();
             Thread.Sleep(500);
             thread2.Start();
+
+            //Multiple threading deaklock
+            Console.WriteLine("Main Started");
+            Account accountA = new Account(101, 5000);
+            Account accountB = new Account(102, 5000);
+            AccountManager accountManagerA = new AccountManager(accountA, accountB, 1000);
+            //Thread T1 = new Thread(accountManagerA.Transfer);
+            Thread T1 = new Thread(accountManagerA.NoLockTransfer);
+            T1.Name = "T1";
+            AccountManager accountManagerB = new AccountManager(accountB, accountA, 1000);
+            //Thread T2 = new Thread(accountManagerB.Transfer);
+            Thread T2 = new Thread(accountManagerB.NoLockTransfer);
+            T2.Name = "T2";
+            T1.Start();
+            T2.Start();
+
+            T1.Join();
+            T2.Join();
+            Console.WriteLine("Main Completed");
+            Console.Read();
+
         }
 
     }
