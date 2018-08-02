@@ -1,0 +1,7 @@
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\bin\Debug\ExcelToSQLse.exe.config
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\obj\Debug\ExcelToSQLse.csproj.ResolveComReference.cache
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\obj\Debug\ExcelToSQLse.csprojResolveAssemblyReference.cache
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\bin\Debug\ExcelToSQLse.exe
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\bin\Debug\ExcelToSQLse.pdb
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\obj\Debug\ExcelToSQLse.exe
+C:\Workarea\ExcelToSQLse\ExcelToSQLse\obj\Debug\ExcelToSQLse.pdb
