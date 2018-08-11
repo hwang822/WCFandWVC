@@ -11,4 +11,7 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\bin\EntityFramework.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\bin\EntityFramework.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.csprojResolveAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\bin\MixwellWcf.dll.config
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.csprojAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.csproj.CoreCompileInputs.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWcf\obj\Debug\MixwellWcf.csproj.CopyComplete

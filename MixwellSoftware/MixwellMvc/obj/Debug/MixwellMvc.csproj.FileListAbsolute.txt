@@ -83,4 +83,13 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OpenId.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csprojResolveAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\MixwellMvc.dll.config
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Net.Http.Formatting.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Web.Http.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Web.Http.WebHost.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Net.Http.Formatting.xml
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Web.Http.xml
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\bin\System.Web.Http.WebHost.xml
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csprojAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csproj.CoreCompileInputs.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellMvc\obj\Debug\MixwellMvc.csproj.CopyComplete

@@ -86,4 +86,8 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.OpenId.Relyi
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.AspNet.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojResolveAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\MixwellSoftware.dll.config
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\AspNet.ScriptManager.jQuery.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csproj.CoreCompileInputs.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csproj.CopyComplete
