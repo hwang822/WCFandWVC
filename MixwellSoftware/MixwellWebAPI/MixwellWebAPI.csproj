@@ -207,13 +207,13 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Employees.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <EntityDeploy Include="Models\EmployDataAccess.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EmployDataAccess.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Employees.html" />
     <Content Include="Models\EmployDataAccess.edmx.diagram">
       <DependentUpon>EmployDataAccess.edmx</DependentUpon>
     </Content>
@@ -228,7 +228,6 @@
       <DependentUpon>EmployDataAccess.edmx</DependentUpon>
       <LastGenOutput>EmployDataAccess.cs</LastGenOutput>
     </Content>
-    <Content Include="Employess1.html" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

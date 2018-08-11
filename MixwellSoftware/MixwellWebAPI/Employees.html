@@ -2,29 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <script src="jquery-1.7.1.js"></script>
-    <script type="text/javascript">
-        $(documetn).ready(function () {
-            var ulemployees = $('ulEmployees')
-            $('#btn').click(function () {
+    <!--<title></title>-->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ulemployees = $('#ulEmployees')
+            $('#btn').click(function () 
+            {
                 $.ajax({
-                    type: 'GET',
-                    url: 'api/Employees',
-                    datatype: 'JSON',
-                    sucess: function () {
-                        ulemployees.empty();
-                        $.each(data, function (index, val){
-                            var fullName = val.firstName + ' ' + val.LastName;
-                            ulemployees.append('<li>' + fullName + '<.li>')
-                        }
-                    }
-                });
 
+                    url : 'api/employees',
+                    type : 'GET',
+                    dataType:'json',
+                    success : function(data) {                                      
+                        $.each(data, function () {
+                            $.each(this, function (name, val) {
+                                ulemployees.append('<li>' + name + ': ' + val + ' ');                                
+                            });
+                            ulemployees.append('<li>');
+                        });
+                        
+                    },
+                    error : function(request,error)
+                    {
+                        alert("Request Error: "+JSON.stringify(request));
+                    },                    
+                });                
             });
 
             $('#btnClear').click(function () {
-                ulemployees.empty();
+                ulemployees.empty();                
             });
 
         });
