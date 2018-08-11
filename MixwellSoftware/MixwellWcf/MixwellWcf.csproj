@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +67,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MixwellDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+      <LastGenOutput>MixwellDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MixwellDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+      <LastGenOutput>MixwellDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="MixwellWCFService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,24 +109,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <EntityDeploy Include="MixwellDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MixwellDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="MixwellDataModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
-      <LastGenOutput>MixwellDataModel.Context.cs</LastGenOutput>
-    </Content>
     <Content Include="MixwellDataModel.edmx.diagram">
       <DependentUpon>MixwellDataModel.edmx</DependentUpon>
     </Content>
-    <Content Include="MixwellDataModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
-      <LastGenOutput>MixwellDataModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\MixwellWcf.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

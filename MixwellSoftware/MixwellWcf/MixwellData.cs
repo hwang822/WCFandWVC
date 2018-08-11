@@ -14,8 +14,9 @@ namespace MixwellWcf
     
     public partial class MixwellData
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string place { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string DOB { get; set; }
+        public string Place { get; set; }
     }
 }

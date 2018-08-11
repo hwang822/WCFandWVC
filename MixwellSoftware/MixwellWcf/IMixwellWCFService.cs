@@ -17,61 +17,30 @@ namespace MixwellWcf
         //[WebGet] //using AllData Method
         //[WebGet(UriTemplate = "AllData")]   // default xml format
         //http://localhost:23506/MixwellWCFService.svc/alldata => ["carrot","fox","explorer"]
-        [WebGet(UriTemplate = "AllData", ResponseFormat=WebMessageFormat.Json)] // for json format
+        [WebGet(UriTemplate = "GET", ResponseFormat=WebMessageFormat.Json)] // for json format
         //List<MixwellData> GetAllData();
-        List<string> GetAllData();
+        List<string> GetData();
 
         [OperationContract]
         //[WebGet] //using GetData Method
-        //[WebGet(UriTemplate = "Data/{id}")]  // default xml format
-        //http://localhost:23506/MixwellWCFService.svc/data/40 => "Data = 40"
-        [WebGet(UriTemplate = "Data/{id}", ResponseFormat = WebMessageFormat.Json)] // for json format        
-        //MixwellData GetData(string id);
-        string GetData(string id);
-
-        [OperationContract]
-        [WebInvoke(UriTemplate = "Data/Add", Method = "POST", ResponseFormat = WebMessageFormat.Json)]
-        int AddData(MixwellData data);
-
-        [OperationContract]
-        [WebInvoke(UriTemplate = "Data/Update", Method = "PUT", ResponseFormat = WebMessageFormat.Json)]
-        bool UpdateData(MixwellData data);
-
-
-        //******************************************** 
-        // service test method.
-/*
+        //[WebGet(UriTemplate = "Data/{id}")]  // default xml format for sample data transfer all int to string
+        //http://localhost:23506/MixwellWCFService.svc/data/1 => "get data for id = 1"
+        [WebGet(UriTemplate = "GET/{id}/", ResponseFormat = WebMessageFormat.Json)] // for json format        
+        string GetOneData(string id);
 
 
         [OperationContract]
-        string GetData(int value);
+        [WebInvoke(UriTemplate = "POST/{data}", Method = "POST", ResponseFormat = WebMessageFormat.Json)]
+        void PostData(string data);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-*/
+        [WebInvoke(UriTemplate = "PUT/{data}/{id}", Method = "PUT", ResponseFormat = WebMessageFormat.Json)]
+        void PutData(string data, string id);
+
+        [OperationContract]
+        [WebInvoke(UriTemplate = "DELETE/{id}", Method = "DELETE", ResponseFormat = WebMessageFormat.Json)]
+        void DeleteData(string id);
+
         // TODO: Add your service operations here
-    }
-
-
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
     }
 }

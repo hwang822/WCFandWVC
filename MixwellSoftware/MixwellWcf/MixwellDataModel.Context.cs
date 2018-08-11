@@ -13,10 +13,10 @@ namespace MixwellWcf
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MixwellDatabaseEntities : DbContext
+    public partial class MixwellDBEntities : DbContext
     {
-        public MixwellDatabaseEntities()
-            : base("name=MixwellDatabaseEntities")
+        public MixwellDBEntities()
+            : base("name=MixwellDBEntities")
         {
         }
     
