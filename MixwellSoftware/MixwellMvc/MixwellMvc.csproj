@@ -169,6 +169,7 @@
     <Compile Include="App_Data\App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DependencyInjectionController.cs" />
+    <Compile Include="Controllers\DeptController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MixwellDataController.cs" />
     <Compile Include="Images\Filters\InitializeSimpleMembershipAttribute.cs" />

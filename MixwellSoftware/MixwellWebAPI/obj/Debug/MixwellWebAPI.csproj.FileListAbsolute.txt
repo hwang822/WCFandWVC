@@ -32,3 +32,4 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebAPI\obj\Debug\MixwellWebAPI.cspr
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebAPI\obj\Debug\MixwellWebAPI.csproj.CopyComplete
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebAPI\obj\Debug\MixwellWebAPI.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebAPI\obj\Debug\MixwellWebAPI.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebAPI\obj\Debug\MixwellWebAPI.csprojAssemblyReference.cache
