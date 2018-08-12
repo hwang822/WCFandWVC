@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWeb", "MixwellWeb\MixwellWeb.csproj", "{DFADFB35-0BAD-4486-AB30-2348A0126CD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWcf", "MixwellWcf\MixwellWcf.csproj", "{CDBFDF88-35CA-4BBE-B328-2E42A26911DA}"
@@ -52,5 +54,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71D73B3B-343C-4E42-BA61-5D19AE8A4004}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,39 @@
+﻿@model MixwellMvc.Models.MixwellData
+@{
+    ViewBag.Title = "Mixwell Data Details";
+}
+<div style="font-family:Arial">
+
+    <h2>Mixwell Data Detail</h2>
+
+
+    <table>
+        <tr>
+            <td>
+                <b>Data ID:</b>
+            </td>
+            <td>
+                <b>@Model.ID</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Data Name:</b>
+            </td>
+            <td>
+                <b>@Model.Name</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Data Place:</b>
+            </td>
+            <td>
+                <b>@Model.Place</b>
+            </td>
+        </tr>
+
+    </table>
+    @Html.ActionLink("Back To List", "Index")
+
+</div>

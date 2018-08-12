@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MixwellMvc.Models.MixwellData>
+@using MixwellMvc.Models;
+@{
+    ViewBag.Title = "Mixwell Data";
+}
+<div style="font-family:Arial">
+    <li>
+        @ViewBag.Name 
+    </li>
+    <li>
+        @ViewData["Addr"]
+    </li>
+    
+    <ul>
+        @foreach (MixwellData data in @Model)
+        {
+            <li>
+                @Html.ActionLink(data.Name, "Details", new { id = data.ID })
+            </li>
+        }
+
+    </ul>
+
+</div>

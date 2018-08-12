@@ -58,9 +58,11 @@ D:\Workarea\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.AspNet.xml
 D:\Workarea\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.dll
 D:\Workarea\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.pdb
 D:\Workarea\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojResolveAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\MixwellSoftware.dll.config
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\MixwellSoftware.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\MixwellSoftware.pdb
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\Antlr3.Runtime.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\AspNet.ScriptManager.jQuery.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.AspNet.dll
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.Core.dll
@@ -84,10 +86,8 @@ C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.OAuth.Consum
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.OpenId.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\DotNetOpenAuth.AspNet.xml
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.dll
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.pdb
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\MixwellSoftware.dll.config
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\bin\AspNet.ScriptManager.jQuery.dll
-C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojAssemblyReference.cache
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csproj.CoreCompileInputs.cache
 C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csproj.CopyComplete
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellSoftware.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWeb\obj\Debug\MixwellWeb.csprojAssemblyReference.cache

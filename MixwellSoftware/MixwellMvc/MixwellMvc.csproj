@@ -21,6 +21,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +50,8 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -172,7 +176,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\MixwellData.cs" />
+    <Compile Include="Models\MixwellData.cs">
+      <DependentUpon>MixwellDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MixwellDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MixwellDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MixwellDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MixwellDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MixwellDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WcfClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\DependencyInjectionService.cs" />
     <Compile Include="Startup.cs" />
@@ -234,8 +256,25 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\MixwellDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MixwellDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MixwellDataModel.edmx.diagram">
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\MixwellMvc.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Models\MixwellDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+      <LastGenOutput>MixwellDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MixwellDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MixwellDataModel.edmx</DependentUpon>
+      <LastGenOutput>MixwellDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -252,9 +291,6 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Views\DependencyInjection\DependencyInjectionView.aspx" />
     <Content Include="Views\DependencyInjection\Index.aspx" />
-    <Content Include="Views\MixwellData\Details.aspx" />
-    <Content Include="Views\MixwellData\Edit.aspx" />
-    <Content Include="Views\MixwellData\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -293,14 +329,19 @@
     <Content Include="Views\Shared\_LoginPartial.aspx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\MixwellData\Index.cshtml" />
+    <Content Include="Views\MixwellData\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -319,7 +360,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5557/</IISUrl>
+          <IISUrl>http://localhost:5557/MixwellMvc</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
