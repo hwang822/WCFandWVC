@@ -14,7 +14,7 @@ namespace MixwellMvc.Controllers
         // https://www.youtube.com/watch?v=-pzwRwYlXMw&list=PL6n9fhu94yhVm6S8I2xd6nYz2ZORd7X2v
         // install mvc 2,3,4
         // GET: /MixwellData/
-
+        [HttpGet]
         public ActionResult Index()
         {
 
@@ -30,7 +30,7 @@ namespace MixwellMvc.Controllers
                 return View(model);
             }                        
         }
-
+        [HttpGet]
         public ActionResult Details(int id)
         {
             using (var db = new MixwellDBEntities())
@@ -41,19 +41,36 @@ namespace MixwellMvc.Controllers
 
         }
 
+        [HttpPut]
         public ActionResult Edit(int id)
         {
 
-            WebClient proxy = new WebClient();
-            string serviceuri = string.Format("http://localhost:23506/MixwellWCFService.svc/data/{0}", id);
-            byte[] _data = proxy.DownloadData(serviceuri);
-            Stream _mem = new MemoryStream(_data);
+            using (var db = new MixwellDBEntities())
+            {
+                var model = db.MixwellDatas.ToList<MixwellData>().Single(d => d.ID == id);
+                return View(model);
+            }
 
-            var reader = new StreamReader(_mem);
-            var result = reader.ReadToEnd();
-            var model = JsonConvert.DeserializeObject<MixwellData>(result);
-            return View(model);
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(string name, string place)
+        {
+            var data = new MixwellData() { Name = name, Place = place };
+            using (var db = new MixwellDBEntities())
+            {
+                db.MixwellDatas.Add(data);
+                db.SaveChanges();
+                return View();
+            }            
+        }
+
 
         [HttpPost]
         public ActionResult Edit(MixwellData model)

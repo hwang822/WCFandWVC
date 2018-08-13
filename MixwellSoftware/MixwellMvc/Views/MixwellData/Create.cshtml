@@ -1,0 +1,28 @@
+﻿@model MixwellMvc.Models.MixwellData
+@{
+    ViewBag.Title = "Mixwell Data Create";
+}
+<p style="font-family:Arial">
+
+    <h2>Create</h2>
+    <fieldset>
+        <legend>Mixell Data</legend>
+        <div class="editor-lable">
+            <label for="Name">Name</label>
+        </div>
+        <div class="editor-field">
+            <input id="Name" name="Name" type="text" value="" />
+        </div>
+        <div class="editor-lable">
+            <lable for="Place">Place</lable>
+        </div>
+        <div class="editor-field">
+            <input id="Place" name="Place" type="text" value="" />
+        </div>
+        <p>
+            <input type ="button" value="Create"/>
+        </p>
+    </fieldset>
+    @Html.ActionLink("Back To List", "Index")
+
+</div>
