@@ -1,0 +1,11 @@
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\Debug\netcoreapp2.0\MixwellAngular.deps.json
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\Debug\netcoreapp2.0\MixwellAngular.runtimeconfig.json
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\Debug\netcoreapp2.0\MixwellAngular.runtimeconfig.dev.json
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\Debug\netcoreapp2.0\MixwellAngular.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\bin\Debug\netcoreapp2.0\MixwellAngular.pdb
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.csprojAssemblyReference.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.csproj.CoreCompileInputs.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.AssemblyInfoInputs.cache
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.AssemblyInfo.cs
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.dll
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellAngular\obj\Debug\netcoreapp2.0\MixwellAngular.pdb
