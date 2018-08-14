@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWcf", "MixwellWcf\Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellMvc", "MixwellMvc\MixwellMvc.csproj", "{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellAngular", "MixwellAngular\MixwellAngular.csproj", "{247D7F80-EDB0-4DBB-96FC-17EE5799127A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWPF", "WixwellWPF\MixwellWPF.csproj", "{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellConsole", "MixwellConsole\MixwellConsole.csproj", "{82884F02-57EA-4F99-A1C6-FAC37D00CBEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellWebAPI", "MixwellWebAPI\MixwellWebAPI.csproj", "{72F614A5-EBBA-496C-A32B-0B43BFC76E2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixwellAngular", "MixwellAngular\MixwellAngular.csproj", "{32EBAD62-9FEA-4A35-9F84-96B710504D7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE441DD8-E1B4-472C-AF3B-3B40D7E664E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{247D7F80-EDB0-4DBB-96FC-17EE5799127A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54BC8B60-FC9C-407B-BF16-E2AE5FC8A695}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{72F614A5-EBBA-496C-A32B-0B43BFC76E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72F614A5-EBBA-496C-A32B-0B43BFC76E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72F614A5-EBBA-496C-A32B-0B43BFC76E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EBAD62-9FEA-4A35-9F84-96B710504D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EBAD62-9FEA-4A35-9F84-96B710504D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EBAD62-9FEA-4A35-9F84-96B710504D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EBAD62-9FEA-4A35-9F84-96B710504D7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
