@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-services.js","sourceRoot":"","sources":["../../../../src/app/mock-services.ts"],"names":[],"mappings":";;AAEa,QAAA,QAAQ,GAAc;IACjC,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,aAAa,EAAE;IAC/B,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,oBAAoB,EAAE;IACtC,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,uBAAuB,EAAE;IACzC,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,wBAAwB,EAAE;CAC3C,CAAC"}
