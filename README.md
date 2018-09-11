@@ -14,7 +14,7 @@ PROTOCOL
                           RESOURCE
 CLIENT  <==  WEB SERVER
 representation of resource
-HTMO IMAGE XML JSON
+HTML IMAGE XML JSON
 such as services.html services.img services.xml services.json ...
 http://www.eventellect.com is response state
 click different link the state of applications are changed.

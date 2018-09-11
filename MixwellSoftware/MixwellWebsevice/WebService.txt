@@ -1,0 +1,60 @@
+https://www.youtube.com/watch?v=iqNiINZ4Sxg
+
+A web service is any piece of software that makes itself available over the internet and uses a standardized XML messaging system. XML is used to encode all communications to a web service. For example, a client invokes a web service by sending an XML message, then waits for a corresponding XML response.
+
+Web services are of two kinds: Simple Object Access Protocol (SOAP) and Representational State Transfer (REST). 
+
+SOAP defines a standard communication protocol (set of rules) specification for XML-based message exchange. SOAP uses different transport protocols, such as HTTP and SMTP.
+
+While REST stands for Representational State Transfer, which is an architectural style for networked hypermedia applications, it is primarily used to build Web services that are lightweight, maintainable, and scalable. A service based on REST is called a RESTful service.
+
+Webservice 
+JSON, XML, Remote Procedure Calls, SOAP and REST
+
+
+Webservice is programing in any platforms to talk any language over networking.
+
+JSON - a java script object notation. But it could work at any language but not js.
+ 
+Standard: {Key : value,  Key : value, {key, : value} ...}  pair
+
+Data Types:
+.Number: No difference between integer and floats
+.String : String of Unicode characters. Use double quotes
+.Boolean: True or false
+.Array: Ordered list of 0 or more values
+.Object: Unordered collection of key/value paris
+.Null: Empty value
+
+JSON Syntax Rules
+.Uses Key/values pairs - {"name" : "Brad"}
+.Uses double quotes around Key and Value
+.Must use the specified data types.
+.File type is ".json"
+
+HTML file to present web UI.
+   html has head and body, the body has script to run java script functions.
+
+to install live-server to run html as server in local
+
+C:\Users\Hongbo>npm install -g live-server
+
+then CD to the folder of the server.
+
+C:\Users\Hongbo>cd C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebsevice\Json Sandbox
+
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebsevice\Json Sandbox>
+
+create index.html file in this folder
+
+C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebsevice\Json Sandbox>live-server
+Serving "C:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebsevice\Json Sandbox" at http://127.0.0.1:8080
+JSON Sandbox 
+
+https://www.youtube.com/watch?v=rJesac0_Ftw
+Json and Ajax to work together sample 
+
+using java script create html UI animals.html
+
+
+

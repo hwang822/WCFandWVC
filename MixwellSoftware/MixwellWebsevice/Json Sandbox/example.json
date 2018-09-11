@@ -1,0 +1,9 @@
+{
+  "name": " Brad Traversy",
+  "age": 35,
+  "address": {
+    "street": " 5 main st",
+    "city": "Bostyon"
+  },
+  "children": ["Brianna", "Nicholas"]
+}
