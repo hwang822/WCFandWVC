@@ -19,7 +19,7 @@ namespace MixwellSoftware
 
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
-            GetData(texid.Text);
+            //GetData(texid.Text);
         }
 
         private void GetData(string p)

@@ -26,5 +26,7 @@ namespace MixwellWebAPI.Models
         }
     
         public DbSet<Employee> Employees { get; set; }
+
+        object temporaryVariable;
     }
 }

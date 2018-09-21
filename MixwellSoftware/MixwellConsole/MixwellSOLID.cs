@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace MixwellConsole
 {
     /*
-*S - Single Responsibility Principle (known as SRP)     
-•O - Open/Closed Principle
-•L - Liskov’s Substitution Principle
-•I - Interface Segregation Principle
-•D - Dependency Inversion Principle     
+*S - Single Responsibility Principle (known as SRP)  Class should be having one and only one responsibility   
+•O - Open/Closed Principle                  Open for extension but close for modiftaion
+•L - Liskov’s Substitution Principle        Child class should not break parent class type definition and havior
+•I - Interface Segregation Principle        Interface shoud not be forced to unrealte user (should be seperated)
+•D - Dependency Inversion Principle         Not write any tightly coupled code 
+
      */
 
     //S - Class should be having one and only one responsibility         

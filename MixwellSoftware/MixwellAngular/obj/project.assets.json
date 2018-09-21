@@ -12663,23 +12663,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hongbo\\.nuget\\packages\\": {},
+    "C:\\Users\\hwang_000\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\MixwellAngular.csproj",
+      "projectUniqueName": "F:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\MixwellAngular.csproj",
       "projectName": "MixwellAngular",
-      "projectPath": "C:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\MixwellAngular.csproj",
-      "packagesPath": "C:\\Users\\Hongbo\\.nuget\\packages\\",
-      "outputPath": "C:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\obj\\",
+      "projectPath": "F:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\MixwellAngular.csproj",
+      "packagesPath": "C:\\Users\\hwang_000\\.nuget\\packages\\",
+      "outputPath": "F:\\Workarea\\WCFandWVC\\MixwellSoftware\\MixwellAngular\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hongbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hwang_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

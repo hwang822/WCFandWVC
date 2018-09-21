@@ -11,7 +11,8 @@ namespace MixwellWebAPI
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                //routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "{controller}/{id}",  //remove "api" path name
                 defaults: new { id = RouteParameter.Optional }
             );
 
