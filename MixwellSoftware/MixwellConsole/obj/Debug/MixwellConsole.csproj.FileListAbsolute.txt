@@ -10,3 +10,4 @@ F:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\bin\Debug\MixwellConsole.pd
 F:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.csproj.CoreCompileInputs.cache
 F:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.exe
 F:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.pdb
+F:\Workarea\WCFandWVC\MixwellSoftware\MixwellConsole\obj\Debug\MixwellConsole.csprojAssemblyReference.cache

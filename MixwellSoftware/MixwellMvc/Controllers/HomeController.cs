@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace MixwellMvc.Controllers
 {
-    //home HomeController is defualt start HOmeView
-    // public ActionResult Index() will go to HomeView
-
     public class HomeController : Controller
     {
-        // run http://localhost:5557/
+        //home HomeController is defualt start HOmeView
+        // public ActionResult Index() will go to HomeView
+
+        // run http://localhost:28327/
 
         /*   HomeController/GetMVCVersion  hometronroller is default
 
@@ -22,15 +22,26 @@ namespace MixwellMvc.Controllers
                     );
         */
 
+            //*****************************************************
+        //below is Controller without viewer
+
         public string GetInput(string input)
         {
-            // http://localhost:5557/MixwellMvc/Home/GetInput/?input=Henry
+            // http://localhost:28327/MixwellMvc/Home/GetInput/?input=Henry
             // Invork GetInput: Input = Henry
 
             return "Invork GetInput:" + " Input = " + Request.QueryString["input"]; ;
 
         }
-
+        
+        public string GetTwoInput(string id, string name)
+        {
+            //run http://localhost:28327/MixwellMvc/Home/index/?id=10&name=Henry
+            //it is not work, need to know multiple input
+            //ID: 10; Name = Henry
+            return "ID: " + id + ", Name = " + name;
+        }
+        
 
         public string GetMVCVersion()
         {
@@ -38,33 +49,42 @@ namespace MixwellMvc.Controllers
 
         }
 /*
-        public string Index(string id, string name)
+        public string Index()
         {
-            //run http://localhost:5557/MixwellMvc/Home/index/10?name=Henry
+            //run http://localhost:28327/MixwellMvc
             //ID: 10 Name = Henry
-            return "ID: " + id + " Name = " + name;
+            return GetMVCVersion();
         }
 */
+
+        //*****************************************************
+        //below is Controller with viewer
+
         
-        public ActionResult Index()
-        {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+                public ActionResult Index()
+                {
+                    //ActionResult for http://localhost:28327/Home/
+                    //ActionResult for http://localhost:28327
+                    return View();
+                }
 
-            return View();
-        }
+                public ActionResult About()
+                {
+                    //ActionResult for http://localhost:28327/Home/About
+
+                    ViewBag.Message = "Your application description page.";
+
+                    return View();
+                }
+
+                public ActionResult Contact()
+                {
+                    //ActionResult for http://localhost:28327/Home/Contact
+
+                    ViewBag.Message = "Your contact page.";
+
+                    return View();
+                }
         
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your app description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
