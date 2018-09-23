@@ -63,16 +63,16 @@ ID	Name	DOB	Place
         public List<string> GetData()
         {
             //throw new NotImplementedException();
-            List<MixwellData> datas = GetAllData();
-
-            return mixwelldata;            
+            //List<MixwellData> datas = GetAllData();
+            return mixwelldata;
+            
         }
 
         //http://localhost:23506/MixwellWCFService.svc/GET/1
         //response "fox"
         public string GetOneData(string id)
         {
-            MixwellData data = GetAData(id);
+            //MixwellData data = GetAData(id);
             return String.Format("{0}", mixwelldata[int.Parse(id)]);
             //        throw new NotImplementedException();
         }
@@ -92,6 +92,7 @@ ID	Name	DOB	Place
             mixwelldata.RemoveAt(int.Parse(id));
         }
 
+        //Here is GustomerService 
         //data base connection has problem at iis run
         public List<MixwellData> GetAllData()
         {
@@ -125,7 +126,7 @@ ID	Name	DOB	Place
 
             //            throw new NotImplementedException();
         }
-
+        
         bool UpdateData(MixwellData data)
         {
             using (var db = new MixwellDBEntities())

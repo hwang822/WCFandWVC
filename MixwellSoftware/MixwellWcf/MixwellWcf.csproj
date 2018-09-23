@@ -78,6 +78,7 @@
       <LastGenOutput>MixwellDataModel.cs</LastGenOutput>
     </Content>
     <Content Include="MixwellWCFService.svc" />
+    <Content Include="ReadMe.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

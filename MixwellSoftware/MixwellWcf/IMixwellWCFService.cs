@@ -16,7 +16,7 @@ namespace MixwellWcf
         [OperationContract]
         //[WebGet] //using AllData Method
         //[WebGet(UriTemplate = "AllData")]   // default xml format
-        //http://localhost:23506/MixwellWCFService.svc/alldata => ["carrot","fox","explorer"]
+        //http://localhost:23506/MixwellWCFService.svc/GET => ["carrot","fox","explorer"]
         [WebGet(UriTemplate = "GET", ResponseFormat=WebMessageFormat.Json)] // for json format
         //List<MixwellData> GetAllData();
         List<string> GetData();
@@ -40,6 +40,7 @@ namespace MixwellWcf
         [OperationContract]
         [WebInvoke(UriTemplate = "DELETE/{id}", Method = "DELETE", ResponseFormat = WebMessageFormat.Json)]
         void DeleteData(string id);
+
 
         // TODO: Add your service operations here
     }
