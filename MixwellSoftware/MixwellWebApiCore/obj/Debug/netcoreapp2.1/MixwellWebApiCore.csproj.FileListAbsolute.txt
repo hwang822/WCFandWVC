@@ -1,0 +1,14 @@
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\bin\Debug\netcoreapp2.1\MixwellWebApiCore.deps.json
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\bin\Debug\netcoreapp2.1\MixwellWebApiCore.runtimeconfig.json
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\bin\Debug\netcoreapp2.1\MixwellWebApiCore.runtimeconfig.dev.json
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\bin\Debug\netcoreapp2.1\MixwellWebApiCore.dll
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\bin\Debug\netcoreapp2.1\MixwellWebApiCore.pdb
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.csprojAssemblyReference.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.csproj.CoreCompileInputs.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.RazorAssemblyInfo.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.RazorAssemblyInfo.cs
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.AssemblyInfoInputs.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.AssemblyInfo.cs
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.RazorTargetAssemblyInfo.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.dll
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApiCore\obj\Debug\netcoreapp2.1\MixwellWebApiCore.pdb

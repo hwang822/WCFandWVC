@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mixwellwebapi:
+    image: ${DOCKER_REGISTRY}mixwellwebapi
+    build:
+      context: .\MixwellWebApi
+      dockerfile: Dockerfile

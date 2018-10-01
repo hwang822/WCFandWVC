@@ -1,0 +1,2 @@
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApi.Tests\obj\Debug\MixwellWebApi.Tests.csprojAssemblyReference.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellWebApi.Tests\obj\Debug\MixwellWebApi.Tests.csproj.CoreCompileInputs.cache

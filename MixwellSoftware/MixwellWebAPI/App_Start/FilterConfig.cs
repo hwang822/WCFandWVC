@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MixwellWebAPI
+namespace MixwellWebApi
 {
     public class FilterConfig
     {

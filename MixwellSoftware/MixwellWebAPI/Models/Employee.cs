@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MixwellWebAPI.Models
+namespace MixwellWebApi.Models
 {
     using System;
     using System.Collections.Generic;

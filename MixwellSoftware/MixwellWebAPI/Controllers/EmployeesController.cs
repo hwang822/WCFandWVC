@@ -4,7 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using MixwellWebAPI.Models;
+using MixwellWebApi.Models;
+//using MixwellWebAPI.Models;
 
 // ASP NET Web API and SQL Server
 //https://www.youtube.com/watch?v=nMGlaiNBbNU
@@ -76,10 +77,11 @@ namespace MixwellWebAPI.Controllers
                    < Salary > 45000 </ Salary >
                    </ Employee >
             */
-            using (EmployeeDBEntities entities = new EmployeeDBEntities())
-            {
-                return entities.Employees.ToList<Employee>();
-            }
+            //            using (EmployeeDBEntities entities = new EmployeeDBEntities())
+            //            {
+            //                return entities.Employees.ToList<Employee>();
+            //            }
+            return NotFound();
 
         }
 
@@ -97,10 +99,10 @@ namespace MixwellWebAPI.Controllers
             </Employee>
             */
 
-            using (EmployeeDBEntities entities = new EmployeeDBEntities())
-            {
-                return entities.Employees.FirstOrDefault<Employee>(e => e.ID == id);
-            }
+//            using (EmployeeDBEntities entities = new EmployeeDBEntities())
+//            {
+//                return entities.Employees.FirstOrDefault<Employee>(e => e.ID == id);
+//            }
 
         }
         // https://www.youtube.com/watch?v=0eGUix3Nkjg
@@ -108,11 +110,11 @@ namespace MixwellWebAPI.Controllers
         //using Telerik Fiddler to test Post function.
         public void Post(Employee employee, int id)
         {
-            using (EmployeeDBEntities entities = new EmployeeDBEntities())
-            {
-                entities.Employees.Add(employee);
-                entities.SaveChanges();
-            }
+//            using (EmployeeDBEntities entities = new EmployeeDBEntities())
+//            {
+//                entities.Employees.Add(employee);
+//                entities.SaveChanges();
+//            }
 
         }
 
@@ -121,6 +123,7 @@ namespace MixwellWebAPI.Controllers
         {
             try
             {
+/*
                 using (EmployeeDBEntities entities = new EmployeeDBEntities())
                 {
                     var entity = entities.Employees.FirstOrDefault(e => e.ID == id);
@@ -136,7 +139,7 @@ namespace MixwellWebAPI.Controllers
                     }
 
                 }
-
+*/
             }
             catch (Exception ex)
             {
@@ -150,6 +153,7 @@ namespace MixwellWebAPI.Controllers
         {
             try
             {
+/*
                 using (EmployeeDBEntities entities = new EmployeeDBEntities())
                 {
                     var entity = entities.Employees.FirstOrDefault(e => e.ID == id);
@@ -169,7 +173,7 @@ namespace MixwellWebAPI.Controllers
                     }
 
                 }
-
+*/
             }
             catch (Exception ex)
             {
