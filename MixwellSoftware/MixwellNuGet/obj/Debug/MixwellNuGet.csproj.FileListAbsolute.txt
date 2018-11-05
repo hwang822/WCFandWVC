@@ -1,0 +1,17 @@
+E:\Workarea\MixwellNuGet\bin\Debug\MixwellNuGet.exe.config
+E:\Workarea\MixwellNuGet\bin\Debug\MixwellNuGet.exe
+E:\Workarea\MixwellNuGet\bin\Debug\MixwellNuGet.pdb
+E:\Workarea\MixwellNuGet\obj\Debug\MixwellNuGet.csprojAssemblyReference.cache
+E:\Workarea\MixwellNuGet\obj\Debug\MixwellNuGet.csproj.CoreCompileInputs.cache
+E:\Workarea\MixwellNuGet\obj\Debug\MixwellNuGet.exe
+E:\Workarea\MixwellNuGet\obj\Debug\MixwellNuGet.pdb
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\bin\Debug\MixwellNuGet.exe.config
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\bin\Debug\MixwellNuGet.exe
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\bin\Debug\MixwellNuGet.pdb
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\bin\Debug\log4net.dll
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\bin\Debug\log4net.xml
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\obj\Debug\MixwellNuGet.csprojAssemblyReference.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\obj\Debug\MixwellNuGet.csproj.CoreCompileInputs.cache
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\obj\Debug\MixwellNuGet.csproj.CopyComplete
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\obj\Debug\MixwellNuGet.exe
+E:\Workarea\WCFandWVC\MixwellSoftware\MixwellNuGet\obj\Debug\MixwellNuGet.pdb
